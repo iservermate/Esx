@@ -1,5 +1,6 @@
-- name: Ping server
+- name: Hello World Sample
   hosts: all
   tasks:
-    - name: Ping
-      ping:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
