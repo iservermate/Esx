@@ -1,3 +1,5 @@
----
-#Playbook to ping server
-
+- name: Ping server
+  hosts: all
+  tasks:
+    - name: Ping
+      ansible.builtin.ping:
