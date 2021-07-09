@@ -1,0 +1,8 @@
+[local]
+localhost ansible_connection=local
+
+[tower]
+192.168.0.9
+
+[esx]
+192.168.0.4

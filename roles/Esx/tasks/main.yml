@@ -1,0 +1,22 @@
+---
+# tasks file for Esx
+
+#  - name: Clone the template
+#    vmware_guest:
+#      hostname: "{{ vcenter_ip }}"
+#      username: "{{ vcenter_username }}"
+#      password: "{{ vcenter_password }}"
+#      validate_certs: False
+  - name: Copy template file to files folder
+    template:
+      src: CreateVm.j2
+      dest: /Users/mkazmi/Documents/GitHub/Esx/roles/Esx/files/CreateVm.ps1
+      mode: '0744'
+  - debug:
+      msg: "Script file create on /Users/mkazmi/Documents/GitHub/Esx/roles/Esx/files/CreateVm.ps1"
+  - name: Creating VM
+    command: pwsh /Users/mkazmi/Documents/GitHub/Esx/roles/Esx/files/CreateVm.ps1
+    register: result
+  - name: print results
+    debug:
+      msg: "{{ result }}"

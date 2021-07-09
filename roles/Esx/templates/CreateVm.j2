@@ -1,0 +1,6 @@
+Set-PowerCLIConfiguration -InvalidCertificateAction:ignore
+Connect-VIServer {{ Eip }} -User root -Password {{ Spass }}
+Get-VM
+New-VM -Name {{ vmName }} -Datastore {{ DSName }} -DiskGB {{ DSize }} -MemoryGB {{ MSzie }} -NumCpu {{ NoCpus }} -DiskStorageFormat {{ DFormat }} -CoresPerSocket {{ CCores }} -CD -VMHost {{ Eip }} -GuestId {{ osType }}
+Get-VM {{ vmName }} | Get-CDDrive | Set-CDDrive -ISOPath "{{ ImagePath }}" -StartConnected $true -Confirm:$false 1> /dev/null
+Start-VM -VM {{ vmName }} -Server {{ Eip }}
