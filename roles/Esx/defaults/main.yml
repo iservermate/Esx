@@ -1,0 +1,16 @@
+---
+# defaults file for Esx
+vcenter_ip: 192.168.0.4
+vcenter_username: root
+vcenter_password: M0hsin!@#
+Eip: "{{ EsxServerIP }}"
+Spass: "{{ ServerPassword }}"
+vmName: "{{ VmName }}"
+DSName: "{{ DataStoreName }}"
+DSize: "{{ DiskSize }}"
+MSzie: "{{ MemorySize }}"
+NoCpus: "{{ NumberOfCpus }}"
+DFormat: "{{ DiskFormat }}"
+CCores: "{{ CpuCores }}"
+osType: "{{ OsType }}"
+ImagePath: "{{ IsoPath }}"
