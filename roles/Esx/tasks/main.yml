@@ -13,9 +13,9 @@
       dest: /Users/mkazmi/Documents/GitHub/Esx/roles/Esx/files/CreateVm.ps1
       mode: '0744'
   - debug:
-      msg: "Script file create on /Users/mkazmi/Documents/GitHub/Esx/roles/Esx/files/CreateVm.ps1"
+      msg: "Script file create on /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1"
   - name: Creating VM
-    command: pwsh /Users/mkazmi/Documents/GitHub/Esx/roles/Esx/files/CreateVm.ps1
+    command: pwsh /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1
     register: result
   - name: print results
     debug:

@@ -3,10 +3,6 @@
 vcenter_ip: 192.168.0.4
 vcenter_username: root
 vcenter_password: M0hsin!@#
-# defaults file for Esx
-vcenter_ip: 192.168.0.4
-vcenter_username: root
-vcenter_password: M0hsin!@#
 Eip: 192.168.0.4
 Spass: M0hsin@123
 vmName: icmp-rtest-01
