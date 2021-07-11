@@ -1,3 +1,4 @@
+#
 ---
   - name: "Create VM"
     hosts: icmp-esx-01
