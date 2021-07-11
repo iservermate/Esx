@@ -10,7 +10,7 @@
   - name: Copy template file to files folder
     template:
       src: CreateVm.j2
-      dest: /Users/mkazmi/Documents/GitHub/Esx/roles/Esx/files/CreateVm.ps1
+      dest: /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1
       mode: '0744'
   - debug:
       msg: "Script file create on /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1"
