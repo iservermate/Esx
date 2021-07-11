@@ -1,7 +1,7 @@
 #
 ---
   - name: "Create VM"
-    hosts: esx
+    hosts: 192.168.0.4
     gather_facts: no
     vars:
       ansible_python_interpreter: /usr/bin/python
