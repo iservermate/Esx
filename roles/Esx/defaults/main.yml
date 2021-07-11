@@ -4,7 +4,7 @@ vcenter_ip: 192.168.0.4
 vcenter_username: root
 vcenter_password: M0hsin!@#
 Eip: 192.168.0.4
-Spass: M0hsin@123
+Spass: M0hsin!@#
 vmName: icmp-rtest-01
 DSName: Datastore1
 DSize: 50
