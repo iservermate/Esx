@@ -1,9 +1,8 @@
 ---
   - name: "Create VM"
-    hosts: localhost
+    hosts: icmp-esx-01
     gather_facts: no
     vars:
-      #ansible_python_interpreter: /usr/bin/python2.7
       ansible_python_interpreter: /usr/bin/python
     roles:
       - Esx  
