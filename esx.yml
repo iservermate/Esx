@@ -1,7 +1,7 @@
 #
 ---
   - name: "Create VM"
-    hosts: icmp-esx-01
+    hosts: esx
     gather_facts: no
     vars:
       ansible_python_interpreter: /usr/bin/python
