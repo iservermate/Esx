@@ -1,0 +1,53 @@
+---
+  - name: "Create VM"
+    hosts: localhost
+    gather_facts: no
+#    become: yes
+    vars:
+      #ansible_python_interpreter: /usr/bin/python2.7
+      ansible_python_interpreter: /usr/bin/python
+    vars_prompt:
+      - name: EsxServerIP
+        prompt: "Enter Esx server ip: "
+        private: no
+        default: 192.168.0.4
+      - name: ServerPassword
+        prompt: "Enter Esx server password"
+        private: yes
+      - name: VmName
+        prompt: "Enter VM name: "
+        private: no
+      - name: DataStoreName
+        prompt: "Enter Datastore name: "
+        private: no
+        default: Datastore1
+      - name: DiskSize
+        prompt: "Enter Disk size:  "
+        private: no
+        default: 90
+      - name: MemorySize
+        prompt: "Enter require Ram size: "
+        private: no
+        default: 2
+      - name: NumberOfCpus
+        prompt: "Enter number of CPUs: "
+        private: no
+        default: 2
+      - name: DiskFormat
+        prompt: "Enter Disk format: "
+        private: no
+        default: Thin
+      - name: CpuCores
+        prompt: "Enter Number of cores per Cpu: "
+        private: no
+        default: 1
+      - name: OsType
+        prompt: "Enter OS type to install {rhel7_64Guest, centos64Guest}:"
+        private: no
+        default: centos64Guest
+      - name: IsoPath
+        prompt: "Enter Iso path image path: "
+        private: no
+        default: "[datastore1] OS/centos8.iso"
+    roles:
+      - Esx  
