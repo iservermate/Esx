@@ -10,12 +10,13 @@
   - name: Copy template file to files folder
     template:
       src: CreateVm.j2
-      dest: /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1
+      #dest: /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1
+      dest: /home/iservermate/CreateVm.ps1
       mode: '0744'
   - debug:
-      msg: "Script file create on /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1"
+      msg: "Script file create on /home/iservermate/CreateVm.ps1"
   - name: Creating VM
-    command: pwsh /home/iservermate/Esx/roles/Esx/files/CreateVm.ps1
+    command: pwsh /home/iservermate/CreateVm.ps1
     register: result
   - name: print results
     debug:
