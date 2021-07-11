@@ -17,4 +17,4 @@ NoCpus: 2
 DFormat: Thin
 CCores: 1
 osType: centos64Guest
-ImagePath: [datastore1] OS/centos8.iso
+ImagePath: "[datastore1] OS/centos8.iso"
