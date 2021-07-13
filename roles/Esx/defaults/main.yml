@@ -2,9 +2,9 @@
 # defaults file for Esx
 vcenter_ip: 192.168.0.4
 vcenter_username: root
-vcenter_password: M0hsin!@#
+vcenter_password: password
 Eip: 192.168.0.4
-Spass: M0hsin!@#
+Spass: password
 vmName: icmp-rtest-01
 DSName: Datastore1
 DSize: 50
