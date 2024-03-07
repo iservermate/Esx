@@ -1,7 +1,4 @@
-# Esx
-For ESX automation
-
-#Use repo to automatically create a VM on ESXi server. 
+# Esx - #Provision a Linux virtual machine on ESX.
 
 
 **Command:** ansible-playbook esx.yml
